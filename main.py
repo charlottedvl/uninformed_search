@@ -24,7 +24,9 @@ successors_list = {
 # Creating the graph
 graph_given = Graph(successors_list)
 
-
+# Performing the DFS search
+print('DSF')
+path_dfs = dfs_search(graph_given, start_node, goal_node)
 
 # Performing the BFS search
 print('BFS')
