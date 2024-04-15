@@ -1,16 +1,31 @@
-# This is a sample Python script.
+# Creating the nodes
+from bfs import bfs_search
+from dfs import dfs_search
+from graph import Graph
+from node import Node
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+start_node = Node("Start")
+A_node = Node("A")
+B_node = Node("B")
+C_node = Node("C")
+D_node = Node("D")
+goal_node = Node("Goal")
+
+# Creating the list of successors for each node
+successors_list = {
+    start_node: [A_node, B_node, D_node],
+    A_node: [start_node, C_node],
+    B_node: [start_node, D_node],
+    C_node: [A_node, D_node, goal_node],
+    D_node: [start_node, B_node, C_node, goal_node],
+    goal_node: [C_node, D_node]
+}
+
+# Creating the graph
+graph_given = Graph(successors_list)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Performing the BFS search
+print('BFS')
+path_bfs = bfs_search(graph_given, start_node, goal_node)
