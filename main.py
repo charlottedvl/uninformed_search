@@ -1,9 +1,9 @@
-# Creating the nodes
 from bfs import bfs_search
 from dfs import dfs_search
 from graph import Graph
 from node import Node
 
+# Creating the nodes
 start_node = Node("Start")
 A_node = Node("A")
 B_node = Node("B")
