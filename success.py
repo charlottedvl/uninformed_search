@@ -4,11 +4,14 @@ def success(parents, goal_node):
     current_node = goal_node
 
     while current_node:
+        # Add the current node to the path
         path_found.append(current_node)
+        # If the current_node is the Start node, then stop
         if current_node.name == "Start": break
+        # Update the current node as the parent of the current node
         current_node = parents[current_node]
 
-    # Reverse the path to have from start node to goal node
+    # Reverse the path to have from Start node to Goal node
     path_found.reverse()
 
     print("Path found")
