@@ -3,7 +3,7 @@ from success import success
 
 
 def dfs_search(graph, starting_node, goal_node):
-    # List of nodes to be explored
+    # List of nodes to be explored (works in Last In First Out = LIFO)
     fringe = LifoQueue()
     # List of nodes explored
     explored = set()
