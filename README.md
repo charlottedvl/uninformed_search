@@ -8,7 +8,6 @@ In this repository, we will explore further two uninformed search algorithms : b
 
 The Breadth-First Search is an algorithm that search all nodes of the current depth before moving to the nodes of the next depth.
 
-// TODO : create my own gif 
 ![BFS](images/BFS_animated.gif)
 
 ### Pseudocode
@@ -16,7 +15,7 @@ The Breadth-First Search is an algorithm that search all nodes of the current de
 To successfully implement the BFS algorithm, two lists are needed: the fringe which stores the nodes to be explored, and the explored which stores the nodes that have already been explored. 
 The fringe works as First In First Out (FIFO): the first element to be stored is the first to be removed from the list. 
 
-// TODO : create my own gif to show the fifo mode 
+//TODO FIFO
 ![FIFO](images/DFS_animated.gif)
 
 The pseudocode is the following:
@@ -41,7 +40,6 @@ end
 The Depth-First Search is an algorithm that explore the deepest it could before backtracking. When it has explored a node, it then explores the neighbor of this node (which is at a higher depth) first. 
 The node at the same depth will be explored if it needs to backtrack, i.e. returning to the previous valid state when it reaches a terminated path. 
 
-// TODO create my own gif of the animated DFS
 ![DFS animated](images/DFS_animated.gif)
 
 ### Pseudocode
