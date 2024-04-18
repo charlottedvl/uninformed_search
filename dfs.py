@@ -14,13 +14,13 @@ def dfs_search(graph, starting_node, goal_node):
     # List of parents for each node
     parents = {starting_node: None}
 
-    print("Parsed nodes: ")
+    print("Parsed nodes: ", end="")
 
     while fringe:
         # Get the current node from last instance in the Queue list
         current_node = fringe.get()
         # Print each explored node
-        print("Node: " + current_node.name)
+        print(current_node.name, end="")
 
         # If the node is already explored, don't explore it again
         if current_node in explored:
@@ -30,6 +30,7 @@ def dfs_search(graph, starting_node, goal_node):
         if current_node == goal_node:
             return success(parents, current_node)
 
+        print(" - ", end="")
         # Get all the successors of the current node
         successors = graph.find_successors(current_node)
 

@@ -13,17 +13,18 @@ def bfs_search(graph, starting_node, goal_node):
     # List of parent for each node
     parents = {starting_node: None}
 
-    print("Parsed nodes: ")
+    print("Parsed nodes: ", end="")
     while fringe:
         # Get the current node from the first position of the nodes to be explored
         current_node = fringe[0]
         # Print each node that is explored
-        print("Node: " + current_node.name)
+        print(current_node.name, end="")
 
         # If the current node is the goal node, reconstruct the path and return it with the success function
         if current_node == goal_node:
             return success(parents, current_node)
 
+        print(" - ", end="")
         # Get all the successors of the current node
         successors = graph.find_successors(current_node)
         for successor in successors:

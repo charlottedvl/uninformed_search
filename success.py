@@ -14,9 +14,12 @@ def success(parents, goal_node):
     # Reverse the path to have from Start node to Goal node
     path_found.reverse()
 
-    print("Path found")
+    print("\nPath found: ", end=" ")
+    # Print each node of the path
     for node in path_found:
-        # Print each node of the path
-        print("Node:",
-              node.name)
+        # If it is the goal node, then don't add the " - " at the end
+        if node.name != goal_node.name:
+            print(node.name, end=" - ")
+        else:
+            print(node.name)
     return path_found

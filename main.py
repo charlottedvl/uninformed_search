@@ -29,5 +29,5 @@ print('DSF')
 path_dfs = dfs_search(graph_given, start_node, goal_node)
 
 # Performing the BFS search
-print('BFS')
+print('\nBFS')
 path_bfs = bfs_search(graph_given, start_node, goal_node)
