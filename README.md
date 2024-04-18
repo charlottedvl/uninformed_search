@@ -15,8 +15,7 @@ The Breadth-First Search is an algorithm that search all nodes of the current de
 To successfully implement the BFS algorithm, two lists are needed: the fringe which stores the nodes to be explored, and the explored which stores the nodes that have already been explored. 
 The fringe works as First In First Out (FIFO): the first element to be stored is the first to be removed from the list. 
 
-//TODO FIFO
-![FIFO](images/DFS_animated.gif)
+![FIFO](images/FIFO_animated.gif)
 
 The pseudocode is the following:
 ``` python
@@ -47,8 +46,7 @@ The node at the same depth will be explored if it needs to backtrack, i.e. retur
 To successfully implement the DFS algorithm, we need two main list as for the BFS algorithm: the fringe which stores the nodes to be explored, and the explored which stores the nodes that have already been explored. 
 The fringe works as Last In First Out (LIFO): the last element to be stored is the first to be removed from the list. 
 
-// TODO : create my own gif to show the lifo mode 
-![LIFO](images/DFS_animated.gif)
+![LIFO](images/LIFO_animated.gif)
 
 The pseudocode is the following:
 ``` python
