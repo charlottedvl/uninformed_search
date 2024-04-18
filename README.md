@@ -77,26 +77,28 @@ To test our algorithm, it is useful to run it on an example.
 #### BFS
 
 
-The DFS algorithm should perform like this: 
-![DFS expected perform]()
+The BFS algorithm should perform like this: 
+
+![BFS expected perform](images/BFS_graph.gif)
 
 Then the path found should be: Start - D - Goal
 
 The results obtain are:
 
-![BFS parsed nodes](images/BFS_results.png)
+![BFS results](images/BFS_results.png)
 
 They correspond to what was expected.
 
 #### DFS
 
-The DFS algorithm should perform like this: 
-![DFS expected perform]()
+The DFS algorithm should perform like this:  
+
+![DFS expected perform](images/DFS_graph.gif)
 
 Then the path found should be: Start - D - Goal
 
 The results obtain are:
 
-![DFS parsed nodes](images/DFS_results.png)
+![DFS results](images/DFS_results.png)
 
 They correspond to what was expected. 
