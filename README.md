@@ -84,9 +84,7 @@ Then the path found should be: Start - D - Goal
 
 The results obtain are:
 
-![BFS parsed nodes](images/BFS_parsed_nodes.png)
-
-![BFS path returned](images/BFS_path.png)
+![BFS parsed nodes](images/BFS_results.png)
 
 They correspond to what was expected.
 
@@ -99,8 +97,6 @@ Then the path found should be: Start - D - Goal
 
 The results obtain are:
 
-![DFS parsed nodes](images/DFS_parsed_nodes.png)
-
-![DFS path returned](images/DFS_path.png)
+![DFS parsed nodes](images/DFS_results.png)
 
 They correspond to what was expected. 
